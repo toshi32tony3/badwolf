@@ -211,7 +211,7 @@ call s:HL('ColorColumn',  '',             'darkgravel')
 
 call s:HL('TabLine',      'plain',        s:tabline,    'none')
 call s:HL('TabLineFill',  'plain',        s:tabline,    'none')
-call s:HL('TabLineSel',   'snow',         'tardis',     'none')
+call s:HL('TabLineSel',   'snow',         'deepgravel',     'none')
 
 call s:HL('MatchParen',   'dalespale',    'darkgravel', 'bold')
 
@@ -276,13 +276,13 @@ call s:HL('String', 'dirtyblonde')
 call s:HL('Statement',   'taffy', '', 'bold')
 call s:HL('Keyword',     'taffy', '', 'bold')
 call s:HL('Conditional', 'taffy', '', 'bold')
-call s:HL('Operator',    'dalespale', '', 'none')
+call s:HL('Operator',    'lime', '', 'none')
 call s:HL('Label',       'taffy', '', 'none')
 call s:HL('Repeat',      'taffy', '', 'none')
 
 " Functions and variable declarations are orange, because plain looks weird.
 call s:HL('Identifier', 'orange', '', 'none')
-call s:HL('Function',   'orange', '', 'none')
+call s:HL('Function',   'dalespale', '', 'none')
 
 " Preprocessor stuff is lime, to make it pop.
 "
@@ -290,7 +290,7 @@ call s:HL('Function',   'orange', '', 'none')
 " grouped together at the beginning of a file.  If they're in the middle of some
 " other code they should stand out, because something tricky is
 " probably going on.
-call s:HL('PreProc',   'lime', '', 'none')
+call s:HL('PreProc',   'dalespale', '', 'none')
 call s:HL('Macro',     'lime', '', 'none')
 call s:HL('Define',    'lime', '', 'none')
 call s:HL('PreCondit', 'lime', '', 'bold')
@@ -309,7 +309,7 @@ call s:HL('SpecialChar', 'dress', '', 'bold')
 
 call s:HL('Type',         'dress', '', 'none')
 call s:HL('StorageClass', 'taffy', '', 'none')
-call s:HL('Structure',    'lime', '', 'none')
+call s:HL('Structure',    'orange', '', 'none')
 call s:HL('Typedef',      'taffy', '', 'bold')
 
 " Make try/catch blocks stand out.

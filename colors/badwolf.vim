@@ -276,13 +276,13 @@ call s:HL('String', 'dirtyblonde')
 call s:HL('Statement',   'taffy', '', 'bold')
 call s:HL('Keyword',     'taffy', '', 'bold')
 call s:HL('Conditional', 'taffy', '', 'bold')
-call s:HL('Operator',    'lime', '', 'none')
+call s:HL('Operator',    'dalespale', '', 'none')
 call s:HL('Label',       'taffy', '', 'none')
 call s:HL('Repeat',      'taffy', '', 'none')
 
 " Functions and variable declarations are orange, because plain looks weird.
 call s:HL('Identifier', 'orange', '', 'none')
-call s:HL('Function',   'dalespale', '', 'none')
+call s:HL('Function',   'orange', '', 'none')
 
 " Preprocessor stuff is lime, to make it pop.
 "
@@ -297,9 +297,9 @@ call s:HL('PreCondit', 'lime', '', 'bold')
 
 " Constants of all kinds are colored together.
 " I'm not really happy with the color yet...
-call s:HL('Constant',  'saltwatertaffy', '', 'bold')
-call s:HL('Character', 'toffee', '', 'bold')
-call s:HL('Boolean',   'toffee', '', 'bold')
+call s:HL('Constant',  'plain', '', 'bold')
+call s:HL('Character', 'plain', '', 'bold')
+call s:HL('Boolean',   'saltwatertaffy', '', 'bold')
 
 call s:HL('Number',    'saltwatertaffy', '', 'bold')
 call s:HL('Float',     'saltwatertaffy', '', 'bold')
@@ -308,9 +308,9 @@ call s:HL('Float',     'saltwatertaffy', '', 'bold')
 call s:HL('SpecialChar', 'dress', '', 'bold')
 
 call s:HL('Type',         'dress', '', 'none')
-call s:HL('StorageClass', 'taffy', '', 'none')
-call s:HL('Structure',    'orange', '', 'none')
-call s:HL('Typedef',      'taffy', '', 'bold')
+call s:HL('StorageClass', 'plain', '', 'none')
+call s:HL('Structure',    'dress', '', 'none')
+call s:HL('Typedef',      'plain', '', 'bold')
 
 " Make try/catch blocks stand out.
 call s:HL('Exception', 'lime', '', 'bold')

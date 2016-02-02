@@ -290,8 +290,8 @@ call s:HL('Function',   'orange', '', 'none')
 " grouped together at the beginning of a file.  If they're in the middle of some
 " other code they should stand out, because something tricky is
 " probably going on.
-call s:HL('PreProc',   'dalespale', '', 'none')
-call s:HL('Macro',     'lime', '', 'none')
+call s:HL('PreProc',   'toffee', '', 'bold')
+call s:HL('Macro',     'toffee', '', 'bold')
 call s:HL('Define',    'lime', '', 'none')
 call s:HL('PreCondit', 'lime', '', 'bold')
 

@@ -31,6 +31,15 @@
 " Supporting code -------------------------------------------------------------
 " Preamble {{{
 
+if !exists('s:bright_mode')
+  let s:bright_mode = 0
+  command! BadWolfToggleBrightness
+        \   let s:bright_mode = (s:bright_mode + 1) % 2
+        \ | colorscheme badwolf
+        \ | redraw
+        \ | echo s:bright_mode ? 'bright-mode on' : 'bright-mode off'
+endif
+
 if !has("gui_running") && &t_Co != 88 && &t_Co != 256
     finish
 endif
@@ -58,10 +67,10 @@ let s:bwc = {}
 
 " The most basic of all our colors is a slightly tweaked version of the Molokai
 " Normal text.
-if has('gui_running')
-  let s:bwc.plain = ['d8d6d2', 15]
-else
+if s:bright_mode
   let s:bwc.plain = ['f8f6f2', 15]
+else
+  let s:bwc.plain = ['d8d6d2', 15]
 endif
 
 " Pure and simple.
@@ -86,11 +95,11 @@ let s:bwc.dalespale = ['fade3e', 221]
 " A beautiful tan from Tomorrow Night.
 let s:bwc.dirtyblonde = ['f4cf86', 222]
 
-if has('gui_running')
-  let s:bwc.taffy = ['d54e53', 196]
-else
+if s:bright_mode
   " Delicious, chewy red from Made of Code for the poppiest highlights.
   let s:bwc.taffy = ['ff2c4b', 196]
+else
+  let s:bwc.taffy = ['d54e53', 196]
 endif
 
 " Another chewy accent, but use sparingly!
@@ -102,18 +111,16 @@ let s:bwc.saltwatertaffy = ['8cffba', 121]
 " 'where the user is', which basically consists of:
 "
 " * The cursor
-if has('gui_running')
-  let s:bwc.tardis = ['ff0000', 39]
-else
-  " * A REPL prompt
-  let s:bwc.tardis = ['0a9dff', 39]
-endif
+let s:bwc.tardis = ['ff0000', 39]
 
-if has('gui_running')
-  let s:bwc.orange = ['ff9933', 214]
-else
+" " * A REPL prompt
+" let s:bwc.tardis = ['0a9dff', 39]
+
+if s:bright_mode
   " This one's from Mustang, not Florida!
   let s:bwc.orange = ['ffa724', 214]
+else
+  let s:bwc.orange = ['ff9933', 214]
 endif
 
 " A limier green from Getafe.

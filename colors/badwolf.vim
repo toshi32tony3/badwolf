@@ -356,10 +356,10 @@ call s:HL('PmenuThumb', 'brightgravel')
 " call s:HL('DiffChange', '',     'darkgravel')
 " call s:HL('DiffText',   'snow', 'deepergravel', 'bold')
 
-call s:HL('DiffDelete', 'snow', 'deepergravel')
-call s:HL('DiffAdd',    'snow', 'deepergravel')
-call s:HL('DiffChange', 'snow', 'deepergravel')
-call s:HL('DiffText',   'snow', 'deepergravel')
+call s:HL('DiffDelete', 'snow', 'deepergravel', 'none')
+call s:HL('DiffAdd',    'snow', 'deepergravel', 'none')
+call s:HL('DiffChange', 'snow', 'deepergravel', 'none')
+call s:HL('DiffText',   'snow', 'deepergravel', 'none')
 
 " }}}
 " Spelling {{{

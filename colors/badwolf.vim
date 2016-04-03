@@ -293,12 +293,12 @@ call s:HL('SpecialComment', 'snow', 'bg', 'bold')
 call s:HL('String', 'dirtyblonde')
 
 " Control flow stuff is taffy.
-call s:HL('Statement',   'taffy', '', 'bold')
-call s:HL('Keyword',     'taffy', '', 'bold')
-call s:HL('Conditional', 'taffy', '', 'bold')
+call s:HL('Statement',   'taffy',     '', 'bold')
+call s:HL('Keyword',     'taffy',     '', 'bold')
+call s:HL('Conditional', 'taffy',     '', 'bold')
 call s:HL('Operator',    'dalespale', '', 'none')
-call s:HL('Label',       'taffy', '', 'none')
-call s:HL('Repeat',      'taffy', '', 'none')
+call s:HL('Label',       'taffy',     '', 'none')
+call s:HL('Repeat',      'taffy',     '', 'none')
 
 " Functions and variable declarations are orange, because plain looks weird.
 call s:HL('Identifier', 'orange', '', 'none')
@@ -312,21 +312,20 @@ call s:HL('Function',   'orange', '', 'none')
 " probably going on.
 call s:HL('PreProc',   'toffee', '', 'bold')
 call s:HL('Macro',     'toffee', '', 'bold')
-call s:HL('Define',    'lime', '', 'none')
-call s:HL('PreCondit', 'lime', '', 'bold')
+call s:HL('Define',    'lime',   '', 'none')
+call s:HL('PreCondit', 'lime',   '', 'bold')
 
 " Constants of all kinds are colored together.
 " I'm not really happy with the color yet...
-call s:HL('Constant',  'plain', '', 'bold')
-call s:HL('Character', 'plain', '', 'bold')
+call s:HL('Constant',  'plain',          '', 'bold')
+call s:HL('Character', 'plain',          '', 'bold')
 call s:HL('Boolean',   'saltwatertaffy', '', 'bold')
 
 call s:HL('Number',    'saltwatertaffy', '', 'bold')
 call s:HL('Float',     'saltwatertaffy', '', 'bold')
 
 " Not sure what 'special character in a constant' means, but let's make it pop.
-call s:HL('SpecialChar', 'dress', '', 'bold')
-
+call s:HL('SpecialChar',  'dress', '', 'bold')
 call s:HL('Type',         'dress', '', 'none')
 call s:HL('StorageClass', 'plain', '', 'none')
 call s:HL('Structure',    'dress', '', 'none')
